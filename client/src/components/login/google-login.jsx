@@ -17,7 +17,7 @@ export default function GoogleWithLogin(props) {
   const responseSuccessGoogle = async (response) => {
     // dataRes -- > user {name, email, Idtoken}, token
     const dataRes = await axios.post(
-      "http://localhost:4000/api/v1/googlelogin",
+      "/api/v1/googlelogin",
       { tokenId: response.tokenId }
     );
 

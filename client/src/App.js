@@ -19,12 +19,12 @@ function App() {
         localStorage.setItem('auth-token',"")
         setLoggedIn(false);
       }
-      const tokenRes = await axios.post('http://localhost:4000/api/v1/googlelogin/tokenIsValid',null,{
+      const tokenRes = await axios.post('/api/v1/googlelogin/tokenIsValid',null,{
         headers: {"x-auth-token": token}
       })
 
       if(tokenRes.data){
-        const userRes = await axios.get('http://localhost:4000/api/v1/googlelogin',{
+        const userRes = await axios.get('/api/v1/googlelogin',{
           headers:{'x-auth-token':token}
         })
         setLoggedIn(true)

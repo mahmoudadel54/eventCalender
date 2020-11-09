@@ -13,7 +13,7 @@ export default function EventPage(props) {
   }, []);
   useEffect(() => {
     if (loggedIn) {
-      Axios.get("http://localhost:4000/api/v1/event")
+      Axios.get("/api/v1/event")
         .then((res) => {
           const events = res.data;
           let dict = {};
