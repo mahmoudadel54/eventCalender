@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-require('dotenv').config({path:'./config/.env'});
+require('dotenv').config();
 
 const {app} = require('./db/connection')
 const userRoute = require('./routes/userRouter')
