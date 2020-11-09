@@ -4,11 +4,12 @@
   "description": "it is app for diplay events from google calender",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install":"npm install --prefix client" ,
     "start": "node index.js",
+    "server":"nodemon index.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"nodemon index.js\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Mahmoud Adel",
   "license": "ISC",
