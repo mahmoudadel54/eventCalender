@@ -11,7 +11,7 @@ mongoose.connect(process.env.CONNECTION_DB || "mongodb://localhost:27017/calende
             process.exit();
         }
         console.log("Connection successfully")
-        app.listen(process.env.PORT,()=>{
+        app.listen(process.env.PORT||4000,()=>{
             console.log(`server connect on Port: ${process.env.PORT}`)
         })
     })
