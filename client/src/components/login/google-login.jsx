@@ -43,8 +43,8 @@ export default function GoogleWithLogin(props) {
     <div id="login-container">
       <h1 style={{textAlign:'center'}}>Login with Google</h1>
       <GoogleLogin
-        clientId="320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com"
-        // clientId="320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com"
+        // clientId="320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com"
+        clientId="320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com"
         buttonText="Login"
         onSuccess={responseSuccessGoogle}
         onFailure={responseFailureGoogle}

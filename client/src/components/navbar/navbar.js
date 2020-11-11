@@ -37,8 +37,8 @@ export default function NavBar(props) {
               <label className='btn-secondary' style={{margin:'1rem'}}>Hello, {localStorage["user-name"]}</label>
               <br></br>
               <GoogleLogout
-                clientId="320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com"
-                // clientId="320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com"
+                // clientId="320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com"
+                clientId="320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com"
                 buttonText="Logout"
                 onLogoutSuccess={Logout}
                 className='btn btn-danger'
