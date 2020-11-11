@@ -15,7 +15,7 @@ const googleRoute = require('./routes/googleloginRouter');
 //body parsing
 app.use(express.json());
 //cors to enable any one access our API
-app.use(cors('https://googlecalenderevents.herokuapp.com'));
+app.use(cors());
 
 ////logging 
 // create a write stream (in append mode)
