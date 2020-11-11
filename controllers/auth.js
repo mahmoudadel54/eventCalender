@@ -5,7 +5,7 @@ const { OAuth2Client } = require("google-auth-library");
 const User = require("../models/user");
 
 const client = new OAuth2Client(
-  "320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com"
+  "320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com"
 );
 const googleLogin=async (req, res, next)=> {
   const { tokenId } = req.body;
@@ -13,7 +13,7 @@ const googleLogin=async (req, res, next)=> {
     .verifyIdToken({
       idToken: tokenId,
       audience:
-        "320711869666-n6eps7kaesnlpssgo12m2f1kac08d9b3.apps.googleusercontent.com",
+        "320711869666-4kfmt7jqll32i85airrq1ocrujkes0sm.apps.googleusercontent.com",
     })
     .then(async(response) => {
       const { email_verified, name, email } = response.payload;
