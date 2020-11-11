@@ -42,6 +42,7 @@ export default function NavBar(props) {
                 buttonText="Logout"
                 onLogoutSuccess={Logout}
                 className='btn btn-danger'
+                isSignedIn={false}
               ></GoogleLogout>
             </div>
           ) : (
